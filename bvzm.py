@@ -4,9 +4,9 @@ from irc import *
 import os
 import random
  
-channel = "#testit"
-server = "irc.freenode.net"
-nickname = "reddity"
+channel = "#bvzm"
+server = "chat.freenode.org"
+nickname = "bvzmpy"
  
 irc = IRC()
 irc.connect(server, channel, nickname)
@@ -17,4 +17,4 @@ while 1:
     print text
  
     if "PRIVMSG" in text and channel in text and "hello" in text:
-        irc.send(channel, "Hello!")
+        irc.send(channel, "Hello! I am bvzm (python)")
